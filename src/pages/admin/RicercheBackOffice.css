@@ -1,0 +1,73 @@
+:root {
+    --fs-xl: clamp(3.5rem, 12vw + 1rem, 12rem);
+    --fs-600: clamp(0.7rem, 1.5vw, 4rem);
+    --fs-400: clamp(0.6rem, 1.175vw, 2rem);
+    --fs-500: clamp(0.6rem, 1.3vm, 5rem);
+    --fs-100: clamp(0.2rem, 0.7rem, 0.7rem)
+}
+
+.main{
+    left: 23%!important;
+    margin: 3%!important;
+    padding: 1%;
+    position: fixed;
+    width: 70%!important;
+    background-color: #fff;
+    border-radius: 15px;
+    border: 1px solid #CED3DC;
+    display: grid;
+    padding-bottom: 1%;
+    gap: 1ch;
+    font-size: 0.9rem;
+}
+
+.bordo{
+    border-radius: 15px;
+    border: 1px solid #CED3DC;
+    height: 16.5vh;
+}
+.botton1{
+    background-color: #fff;
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding: 4%;
+    margin: 5% 2% 2% 50%;
+    color: red;
+    text-align: center;
+    width: 60%;
+}
+
+.botton2{
+    background-color: #009EE2;
+    border: 1px solid #009EE2;
+    border-radius: 10px;
+    padding: 4%;
+    width: 60%;
+    color: white;
+    margin: 2% 2% 5% 50%;
+    text-align: center;
+}
+
+.fix_margin{
+    margin-left: -25%;
+}
+.fix_margin2{
+    margin-left: -2%;
+}
+.bottone1{
+    border-radius: 10px;
+    background-color: white;
+    color: #009EE2;
+    border: 1px solid #009EE2;
+    height: 5vh;
+    width: 15vh;
+}
+
+.bottone2{
+    border-radius: 10px;
+    background-color: #009EE2;
+    color: white;
+    border:none;
+    height: 5vh;
+    width: 15vh;
+}

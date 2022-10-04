@@ -1,0 +1,44 @@
+/*:root {
+    --fs-xl: clamp(3.5rem, 12vw + 1rem, 12rem);
+    --fs-600: clamp(0.7rem, 1.5vw, 4rem);
+    --fs-400: clamp(0.6rem, 1.175vw, 2rem);
+    --fs-500: clamp(0.6rem, 1.3vm, 5rem);
+    --fs-100: clamp(0.2rem, 0.7rem, 0.7rem)
+}
+
+*/
+.profilo_component_grande{
+    left: 23% !important;
+    margin: 3% !important;
+    position: fixed;
+    width: 40% !important;
+    max-height: 80%;
+    background-color: #fff;
+    border-radius: 15px;
+    border: 1px solid grey;
+    display: grid;
+    padding: 2%;
+    gap: 1ch;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.profilo_component_piccola {
+    left: 10% !important;
+    margin: 3% !important;
+    max-height: 80%;
+    background-color: #fff;
+    border-radius: 15px;
+    border: 1px solid grey;
+    display: grid;
+    padding: 2%;
+    gap: 1ch;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.bordo_generale{
+    border-radius: 15px;
+    border: 1px solid grey;
+    height: 17.75vh;
+}

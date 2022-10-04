@@ -1,0 +1,34 @@
+.sfondo{
+  background-color: #FFFEFE !important;
+  width: 100%;
+  padding:1.5%;
+  margin-left: 20%;
+}
+
+.arrotondato-mie-offerte{
+  border: 1px solid grey;
+  border-radius: 15px;
+  margin: 0.5%;
+  margin-top: 0.5px;
+  padding: 1%;
+  display: inline-block;
+  height: 80vh;
+  width: 85%;
+}
+
+
+.sezione-interna-mie-offerte{
+  width: 100%;
+  min-height:65vh;
+  height:65vh;
+  overflow:scroll;
+  font-size: 0.8rem;
+  margin-left: -0.05%;
+}
+.bottone_dettagli-mie-offerte{
+  width: 120%;
+  height: 200%;
+  padding: 1%;
+  margin: 0.5%;
+  font-size: 0.95rem;
+}

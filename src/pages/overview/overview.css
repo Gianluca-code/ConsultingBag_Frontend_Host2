@@ -1,0 +1,72 @@
+/*:root {
+    --fs-xl: clamp(3.5rem, 12vw + 1rem, 12rem);
+    --fs-600: clamp(0.7rem, 1.5vw, 4rem);
+    --fs-400: clamp(0.6rem, 1.175vw, 2rem);
+    --fs-500: clamp(0.6rem, 1.3vm, 5rem);
+    --fs-100: clamp(0.2rem, 0.7rem, 0.7rem)
+}*/
+
+
+.overview{
+    left: 23% !important;
+    margin: 3% !important;
+    position: fixed;
+    width: 50% !important;
+    max-height: 80%;
+    background-color: #fff;
+    border-radius: 15px;
+    border: 1px solid grey;
+    display: grid;
+    padding-bottom: 1%;
+    gap: 1ch;
+    font-size: var(--fs-500);
+    font-weight: 700;
+}
+
+.bordo_generale {
+    border-radius: 15px;
+    border: 1px solid grey;
+    max-height: 15.00vh;
+    min-height: 15vh;
+}
+
+.bordo_aste{
+    border-radius: 15px;
+    border: 1px solid grey;
+}
+
+.botton1{
+    background-color: #fff;
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding: 5%;
+    margin: 5% 2% 2% 50%;
+    color: red;
+    text-align: center;
+    width: 65%;
+}
+
+.botton2{
+    background-color: #009EE2;
+    border: 1px solid #009EE2;
+    border-radius: 10px;
+    padding: 5%;
+    width: 65%;
+    color: white;
+    margin: 2% 2% 5% 50%;
+    text-align: center;
+}
+
+.logo{
+    width: 10%;
+    margin-top: 10%;
+}
+.scritta{
+   margin-left: 10%;
+}
+.fix{
+    display: inline-block;
+    margin-left: 5%;
+    font-size: var(--fs-100);
+}
+

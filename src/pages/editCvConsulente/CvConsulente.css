@@ -1,0 +1,16 @@
+.sfondo{
+  background-color: #FFFEFE !important;
+  width: 100%;
+  padding:1.5%;
+  margin-left: 20%;
+}
+
+.arrotondato-Cv{
+  border: 1px solid grey;
+  border-radius: 15px;
+  margin-left: 21%;
+  padding: 1%;
+  display: inline-block;
+  height: 100%;
+  width: 85%;
+}

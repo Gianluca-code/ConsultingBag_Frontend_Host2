@@ -1,0 +1,10 @@
+/*
+* Ruoli che un determinato user può avere
+*/
+export default {
+	ROLE_ADMIN: "ROLE_ADMIN",
+	ROLE_SUPER_AZIENDA: "ROLE_SUPER_AZIENDA",
+	ROLE_AZIENDA:"ROLE_AZIENDA",
+	ROLE_CONSULENTE: "ROLE_CONSULENTE",
+	ROLE_USER: "ROLE_USER",
+};

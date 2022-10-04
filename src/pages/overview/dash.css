@@ -1,0 +1,97 @@
+/*:root {
+  --fs-xl: clamp(3.5rem, 12vw + 1rem, 12rem);
+  --fs-600: clamp(0.7rem, 1.5vw, 4rem);
+  --fs-400: clamp(0.4rem, 1.175vw, 2rem);
+  --fs-200: clamp(0.3rem, 1vw, 1.7rem);
+}*/
+.rightDash {
+    right: 2%;
+    margin: 3%;
+    position: fixed;
+    width: 19%!important;
+    padding:2% 1%!important;
+    background-color: #fff;
+    border: 1px solid grey;
+    border-radius: 15px;
+    font-weight: 500;
+    font-size: var(--fs-200);
+    max-height: 80%;
+    display: grid;
+    place-content: center;
+    /* gap: 1ch; */
+  }
+  .rightDashMobile{
+    left: 12%;
+    margin: 3%;
+    position: fixed;
+    width: 80%!important;
+    padding: 1%;
+    background-color: #fff;
+    border: 1px solid grey;
+    border-radius: 15px;
+    font-weight: 500;
+    font-size: var(--fs-400);
+    line-height: 1.6;
+  }
+.pad{
+  margin-left: 5%!important;
+  font-size: var(--fs-200);
+}
+
+.botton{
+    background-color: #fff;
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding: 3% 5% 3% 5%;
+    margin: 2%;
+    font-size: var(--fs-200);
+}
+  
+  .arrotondato{
+    border: 1px solid grey;
+    border-radius: 15px;
+    margin: 0.5%;
+    margin-top: 0.5px;
+    padding: 1%;
+    display: inline-block;
+    height: 80vh;
+  }
+  
+  .sinistra{
+    height: 400px;
+  }
+  
+  .centro .destra{
+    height: 100%;
+    min-height: 500px;
+  }
+  
+  
+  
+  .btnDashboard{
+    margin: 3px;
+    width: 100%;
+    height: 50px;
+    overflow:hidden !important;
+  }
+  
+  .sezione-interna{
+    width: 100%;
+    min-height:100px;
+    max-height:120px;
+    overflow:scroll;
+  }
+  
+  .bottone-destra{
+    margin: 3px;
+    width: 60%;
+    height: 40px;
+  }
+  
+  
+  
+  @media only screen and (max-width: 864px) {
+    .centro{
+      width:100% !important;
+    }
+  }

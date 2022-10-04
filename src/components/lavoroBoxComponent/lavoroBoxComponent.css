@@ -1,0 +1,21 @@
+.lavoro_box{
+    
+    width: 100%!important;
+    background-color: #fff;
+    border-radius: 15px;
+    border: 1px solid grey;
+    padding: 5%;
+    
+    font-weight: light 300;
+}
+
+.lavoroBox_bottone{
+    background-color: #009EE2;
+    border: 1px solid #009EE2;
+    border-radius: 10px;
+    padding: 5%;
+    height:50px;
+    width: 100px;
+    color: white;
+    text-align: center;
+}
