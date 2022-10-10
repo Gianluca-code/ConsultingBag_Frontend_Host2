@@ -16,10 +16,10 @@ import CvConsulente from "./pages/editCvConsulente/CvConsulente";
 import AddCv from "./addCv";
 import FileUploader from "./FileUploader";
 import InserisciEsperienzaCV from "./components/inserisciEsperienzeCV/InserisciEsperienzeCV";
-import {useSelector} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 import RicercaAste from "./pages/ricercaAste/RicercaAste";
 import RicercaProposte from "./pages/ricercaProposte/RicercaProposte";
-//import ProfiloConsulente from "./pages/profiloConsulente/ProfiloConsulente";
+import ProfiloConsulente from "./pages/profiloConsulente/ProfiloConsulente";
 import ConsMieOfferte from "./pages/consMieOfferte/ConsMieOfferte";
 import DettagliOfferta from "./pages/dettagliOfferta/DettagliOfferta";
 import DettagliProposte from "./dettagliProposte";
@@ -28,9 +28,9 @@ import CreaOfferta from "./pages/editOfferta/CreaOfferta";
 import ModificaOfferta from "./pages/editOfferta/ModificaOfferta";
 import ConsulDenyList from "./pages/consulDenyList/ConsulDenyList";
 import CronologiaConsulente from "./pages/cronologiaConsulente/CronologiaConsulente";
-//import Sidebar from "./components/sidebar/Sidebar";
+import Sidebar from "./components/sidebar/Sidebar";
 import Overview from "./pages/overview/Overview";
-//import ProfileForDash from "./pages/overview/ProfileForDash";
+import ProfileForDash from "./pages/overview/ProfileForDash";
 
 
 function DeleteDenyListItem() {
@@ -45,7 +45,13 @@ export default function App() {
     const {user: currentUser, isLoggedIn: isLoggedIn} = useSelector(
         (state) => state.auth
     );
-
+    const dispatch = useDispatch();
+    const SidebarLayout = () => (
+        <>
+            <Sidebar/>
+            <Outlet/>
+        </>
+    );
     return (
         <BrowserRouter>
             <NavBar/>
@@ -97,12 +103,12 @@ export default function App() {
                             <Route path="/abbonamenti" element={<Abbonamenti/>} />
                             <Route path="*" element={<NotFound page="/overview" name="Vai alla dashboard"/>}/>
 
-
+                            <Route element={<SidebarLayout/>}>
                             <Route
                                 path="/overview"
                                 element={
                                     <>
-                                        {/* <ProfileForDash/>*/}
+                                        <ProfileForDash/>
                                         <Overview/>
                                     </>
                                 }
@@ -110,7 +116,7 @@ export default function App() {
                             <Route path="/user"/>
                             <Route path="/ricAste" element={<RicercaAste/>}/>
                             <Route path="/ricProposte" element={<RicercaProposte/>}/>
-                            {/*<Route path="/profiloConsulente" element={<ProfiloConsulente/>}/>*/}
+                            <Route path="/profiloConsulente" element={<ProfiloConsulente/>}/>
                             <Route path="/mieOfferte" element={<ConsMieOfferte/>}/>
                             <Route path="/dettagliOfferta/:idOfferta" element={<DettagliOfferta/>} />
                             <Route path="/dettagliProposta/:idProposta" element={<DettagliProposte/>} />
@@ -121,7 +127,7 @@ export default function App() {
                             <Route path="/deleteDenyItem/:id" element={<DeleteDenyListItem/>} />
                             <Route path="/deleteEsperienza/:id" element={<DeleteEsperienza />} />
                             <Route path="/cronologiaConsulente" element={<CronologiaConsulente/>} />
-
+                            </Route>
                         </>
                     )}
                 </Routes>

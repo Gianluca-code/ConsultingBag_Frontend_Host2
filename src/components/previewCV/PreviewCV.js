@@ -2,7 +2,7 @@ import React, {useEffect, useState} from "react";
 import {useNavigate, Link} from "react-router-dom";
 import {Col, Container, Row} from "react-bootstrap";
 import './previewCV.css';
-import  { BreakpointProvider,Breakpoint } from 'react-socks';
+//import  { BreakpointProvider,Breakpoint } from 'react-socks';
 import CvConsulenteService from "../../services/cvConsulente.service";
 import esperienzeService from "../../services/esperienze.service";
 
@@ -37,11 +37,11 @@ function previewCV(props){
 
     if(cv){
         return(
-            
-            <BreakpointProvider>
-                
-                
-                <Breakpoint customQuery="(min-width: 1000px)">
+
+            /* <BreakpointProvider>
+
+
+        <Breakpoint customQuery="(min-width: 1000px)">*/
                     <Container fluid className="previewCV_component_grande">
                         <Row>
                         <Col>
@@ -67,14 +67,14 @@ function previewCV(props){
                         </Row>
                         
                     </Container>
-                </Breakpoint>
-                
+        /* </Breakpoint>
 
 
 
 
 
-                <Breakpoint customQuery="(max-width: 999px)">
+
+        <Breakpoint customQuery="(max-width: 999px)">
                     <Container fluid className="previewCV_component_piccola">
                     <Row>
                         <Col>
@@ -104,7 +104,7 @@ function previewCV(props){
                     </Container>
                 </Breakpoint>
 
-            </BreakpointProvider>
+            </BreakpointProvider>*/
         );
     }
 }

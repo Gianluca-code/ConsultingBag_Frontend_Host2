@@ -5,7 +5,7 @@ import './profiloConsulenteComponent.css';
 
 
 import profileImage from "../../static_assets/logo.png";
-import  { BreakpointProvider,Breakpoint } from 'react-socks';
+//import  { BreakpointProvider,Breakpoint } from 'react-socks';
 
 
 
@@ -69,23 +69,23 @@ function ProfiloConsulenteComponent (props) {
 
     return (
 
+<div>
 
-
-        <BreakpointProvider>
-            <Breakpoint customQuery="(min-width: 1000px)">
+    {/*  <BreakpointProvider>
+            <Breakpoint customQuery="(min-width: 1000px)">*/}
 
                 <Container fluid className="profilo_component_grande">
                     <CorpoProfilo mioProfilo={props.mioProfilo} account={props.userData} consulente={props.consulenteData} />
                 </Container>
-            </Breakpoint>
-            <Breakpoint customQuery="(max-width: 999px)">
+    {/*</Breakpoint>
+            <Breakpoint customQuery="(max-width: 999px)">*/}
                 <Container fluid className="profilo_component_piccola">
                     <CorpoProfilo mioProfilo={props.mioProfilo} account={props.userData} consulente={props.consulenteData} />
                 </Container>
-            </Breakpoint>
-        </BreakpointProvider>
+                {/*  </Breakpoint>
+        </BreakpointProvider>*/}
 
-
+</div>
     );
 };
 

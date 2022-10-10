@@ -45,7 +45,7 @@ function ProfiloConsulente() {
 
             {<PreviewCV mioProfilo={true} userData={userData} consulenteData={consulenteData} />}
             </>
-            )}
+            )} 
         </div>
 
     );

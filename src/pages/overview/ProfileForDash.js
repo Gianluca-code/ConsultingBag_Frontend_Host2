@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect, useState} from 'react';
 import "./dash.css";
 import { BsThreeDots, BsPencilSquare } from "react-icons/bs";
-import { BreakpointProvider, Breakpoint } from "react-socks";
+//import { BreakpointProvider, Breakpoint } from "react-socks";
 import { Container, Row, Col } from "react-bootstrap";
 import { useNavigate, Link } from "react-router-dom";
 import {useSelector, useDispatch} from "react-redux";
@@ -71,8 +71,9 @@ function ProfileForDash() {
 console.log(cv);
 
   return (
-    <BreakpointProvider>
-      <Breakpoint customQuery="(min-width: 900px)">
+      <div>
+      {/* <BreakpointProvider>
+      <Breakpoint customQuery="(min-width: 900px)">*/}
           <Container className="rightDash text-center">
             <Row>
               <Col className="rounded-3">
@@ -161,7 +162,7 @@ console.log(cv);
               </Col>
             </Row>
           </Container>
-      </Breakpoint>
+  {/*  </Breakpoint>
       <Breakpoint customQuery="(max-width: 899px)">
         <Container className="rightDashMobile">
             <Row>
@@ -219,7 +220,8 @@ console.log(cv);
             </Row>
         </Container>
       </Breakpoint>
-    </BreakpointProvider>
+    </BreakpointProvider>*/}
+      </div>
   );
 }
 export default ProfileForDash;
