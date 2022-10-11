@@ -33,7 +33,7 @@ function Abbonamenti (){
             .catch(function () { setConsulenteData([])});
 
 
-        axios.get('http://consultingbag-env.eba-kuhmc76g.us-east-1.elasticbeanstalk.com:5000/api/v1/abbonamento/all',{headers: authHeader()} )
+        axios.get('http://Consultingbagbackend-env.eba-ehqx28hk.us-east-1.elasticbeanstalk.com:5000/api/v1/abbonamento/all',{headers: authHeader()} )
             .then((res) =>{
                 setAbbonamenti(res.data);
 
@@ -47,7 +47,7 @@ function Abbonamenti (){
 
 
     const iscrizione = () =>{
-        axios.put('http://consultingbag-env.eba-kuhmc76g.us-east-1.elasticbeanstalk.com:5000/api/v1/consulenti/aggiornaAbbonamento/' + abb.id + '/' + currentUser.username, {},{headers: authHeader()} )
+        axios.put('http://Consultingbagbackend-env.eba-ehqx28hk.us-east-1.elasticbeanstalk.com:5000/api/v1/consulenti/aggiornaAbbonamento/' + abb.id + '/' + currentUser.username, {},{headers: authHeader()} )
             .then((res) =>{
                console.log('Successo')
                 navigate("/overview")

@@ -1,8 +1,8 @@
 import axios from "axios";
 import authHeader from "./auth-header";
 
-const API_URL = "http://consultingbag-env.eba-kuhmc76g.us-east-1.elasticbeanstalk.com:5000/api/test/";
-const API_USERS_URL = "http://consultingbag-env.eba-kuhmc76g.us-east-1.elasticbeanstalk.com:5000/api/v1/users"
+const API_URL = "http://Consultingbagbackend-env.eba-ehqx28hk.us-east-1.elasticbeanstalk.com:5000/api/test/";
+const API_USERS_URL = "http://Consultingbagbackend-env.eba-ehqx28hk.us-east-1.elasticbeanstalk.com:5000/api/v1/users"
 const getPublicContent = () => {
   return axios.get(API_URL + "all");
 };

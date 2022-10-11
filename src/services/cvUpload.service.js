@@ -5,7 +5,7 @@ import {useSelector} from "react-redux";
 const { user: currentUser } = useSelector((state) => state.auth);
 
 const downloadCv=()=>{
-    axios.get('http://consultingbag-env.eba-kuhmc76g.us-east-1.elasticbeanstalk.com:5000/api/v1/cvDownload/downloadFile/' + currentUser.username,{headers: authHeader(), responseType:'blob'} )
+    axios.get('http://Consultingbagbackend-env.eba-ehqx28hk.us-east-1.elasticbeanstalk.com:5000/api/v1/cvDownload/downloadFile/' + currentUser.username,{headers: authHeader(), responseType:'blob'} )
         .then((res) =>{
             let blob = new Blob([res.data], {type:'application/pdf'});
             let file = URL.createObjectURL(blob);
